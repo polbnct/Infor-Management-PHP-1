@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>
+        Discriminant of Quadratic Equations
+    </h1>
+    <form action="part-1.php" method="post">
+        <label for="a">Enter A:</label>
+        <input type="number" name="a" id="a"><br>
+        <label for="a">Enter B:</label>
+        <input type="number" name="b" id="b"><br>
+        <label for="a">Enter C:</label>
+        <input type="number" name="c" id="c"><br><br>
+        <a href="Desktop/second.php">
+        <input type="submit" value="total">
+        </a>
+    </form>
+</body>
+</html>
+<?php
+        $a = $_POST["a"];
+        $b = $_POST["b"];
+        $c = $_POST["c"];
+
+        $total = null;
+        $total = (pow($b, 2) - (4 * $a * $c));
+        echo $total;
+
+    ?>
